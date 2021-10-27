@@ -1,0 +1,19 @@
+.breaktimer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+
+
+.breaktimerimage {
+    width: 50%;
+}
+
+.descriptor {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    /* text-align: center; */
+}

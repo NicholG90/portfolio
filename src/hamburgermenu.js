@@ -1,9 +1,5 @@
-import './App.css';
 import { push as Menu } from 'react-burger-menu'
 import React from 'react';
-import Navigation from './navigation';
-import Main from  './main';
-
 
 var styles = {
     bmBurgerButton: {
@@ -51,7 +47,7 @@ var styles = {
   }
   
 
-class App extends React.Component {
+class Hamburger extends React.Component {
   showSettings (event) {
     event.preventDefault();
   }
@@ -60,17 +56,14 @@ class App extends React.Component {
   render () {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
-      <div id="outer-container">
-      <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-        <Navigation />
+      <Menu styles={ styles }>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </Menu>
-      <main id="page-wrap">
-        <Main />
-      </main>
-      <footer>Nick Gourlay ©2021</footer>
-      </div>
     );
   }
 }
 
-export default App;
+export default Hamburger;

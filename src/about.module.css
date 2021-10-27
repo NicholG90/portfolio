@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    text-align: center;
+    background-color: burlywood;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.logoimage {
+    width: 50px;
+    margin: 5px;
+}
+
+
+.profileimage {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.link:hover {
+    color: orange;
+    cursor: pointer;
+}
