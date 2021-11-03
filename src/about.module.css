@@ -1,15 +1,29 @@
 .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 5vh;
     text-align: center;
-    background-color: burlywood;
+    background-color: #264653;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.aboutText {
+    display: block;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.intro {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    color: coral;
+}
 .logos {
     display: flex;
     flex-direction: row;
-    align-self: center;
+    justify-content: center;
 }
 
 .logoimage {
@@ -19,11 +33,23 @@
 
 
 .profileimage {
-    width: 200px;
+    width: 35vw;
     border-radius: 50%;
 }
 
 .link:hover {
     color: orange;
     cursor: pointer;
+}
+
+
+@media (max-width: 690px) {
+
+    .about {
+        flex-direction: column;
+        height: auto;
+    }
+    .intro {
+        font-size: 3rem;
+    }
 }

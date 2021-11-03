@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import styles from './cocktail.module.css'
+import styles from './projects.module.css'
 import cocktailimage from "./assets/cocktail.jpg";
+import github from "./assets/github.png";
+
 
 
 function Cocktail() {
@@ -18,17 +20,18 @@ function Cocktail() {
   return (
     <div id="cocktail" className={styles.cocktail}>
       <div className={styles.descriptor}>
-        <h2>This is a cocktail App</h2>
+        <h2>A Cocktail App</h2>
         <p>
-          Built this cocktail app blah blah
+          I was able to shake up this Cocktail App
         </p>
         <ul>
-          <li>Built with ReactJs</li>
-          <li>Firebase</li>
+          <li>Built with ReactJS</li>
+          <li>Uses Firebase for OAuth and Database</li>
         </ul>
         <p>Check out a live demo <a href={'http://cocktails.gourlay.me'}>HERE</a></p>
+        <a href={'https://github.com/NicholG90/cocktail-selector'} target="_blank"><img src={github} altText="GitHub Logo" className={styles.logoimage}/></a>
       </div>
-        <img src={cocktailimage} alt="Cocktail Website" className={styles.cocktailImage} onClick={openModal}/>
+        <img src={cocktailimage} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

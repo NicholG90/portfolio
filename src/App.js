@@ -1,5 +1,5 @@
 import './App.css';
-import { push as Menu } from 'react-burger-menu'
+import { elastic as Menu } from 'react-burger-menu'
 import React from 'react';
 import Navigation from './navigation';
 import Main from  './main';
@@ -14,7 +14,7 @@ var styles = {
       top: '36px'
     },
     bmBurgerBars: {
-      background: '#373a47'
+      background: '#f4a261'
     },
     bmBurgerBarsHover: {
       background: '#a90000'
@@ -31,15 +31,15 @@ var styles = {
       height: '100%'
     },
     bmMenu: {
-      background: '#373a47',
+      background: '#f4a261',
       padding: '2.5em 1.5em 0',
-      fontSize: '1.15em'
+      fontSize: '1.15em',
     },
     bmMorphShape: {
-      fill: '#373a47'
+      fill: '#f4a261'
     },
     bmItemList: {
-      color: '#b8b7ad',
+      color: '#2a9d8f',
       padding: '0.8em'
     },
     bmItem: {

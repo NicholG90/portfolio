@@ -34,7 +34,7 @@ function Navigation(props){
             <li>
                 <Link
                     activeClass="active"
-                    to="contact"
+                    to="contactform"
                     spy={true}
                     smooth={true}
                     offset={-70}

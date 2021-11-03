@@ -3,7 +3,7 @@ import Cocktail from "./cocktail";
 import BreakTimer from "./breaktimer";
 import About from "./about";
 import Weighttracker from "./weighttracker";
-import Contact from "./contact";
+import ContactForm from "./contact";
 import styles from './main.module.css'
 
 
@@ -15,7 +15,7 @@ function Main(props) {
         <Cocktail />
         <BreakTimer />
         <Weighttracker />
-        <Contact />
+        <ContactForm />
         </>
     )
 }

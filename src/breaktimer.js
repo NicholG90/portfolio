@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import styles from './breaktimer.module.css'
+import styles from './projects.module.css'
 import breaktimer from "./assets/breaktimer.jpg";
+import github from "./assets/github.png";
 
 
 
@@ -28,8 +29,10 @@ function BreakTimer() {
         <li>Built with JQuery</li>
         <li>HTML/CSS</li>
       </ul>
+      <p>Check out a live demo <a href={'http://countdown.gourlay.me'}>HERE</a></p>
+      <a href={'https://github.com/NicholG90/countdown'} target="_blank"><img src={github} altText="GitHub Logo" className={styles.logoimage}/></a>
     </div>
-      <img src={breaktimer} alt="Cocktail Website" className={styles.breaktimerimage} onClick={openModal}/>
+      <img src={breaktimer} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
