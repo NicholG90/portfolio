@@ -1,0 +1,8 @@
+.listItem {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+}
+
+.listItem:hover {
+    color: #e9c46a;
+}

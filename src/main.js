@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Cocktail from "./cocktail";
 import BreakTimer from "./breaktimer";
 import About from "./about";
@@ -16,7 +16,7 @@ function Main(props) {
         <BreakTimer />
         <Weighttracker />
         <ContactForm />
-        <footer>Nick Gourlay ©2021</footer>
+        <footer className={styles.footer}>Nick Gourlay ©2021</footer>
         </>
     )
 }

@@ -33,7 +33,7 @@ function BreakTimer() {
         <li>HTML/CSS</li>
       </ul>
       <p>Check out a live demo <a href={'http://countdown.gourlay.me'}>HERE</a></p>
-      <a href={'https://github.com/NicholG90/countdown'} target="_blank"><img src={github} altText="GitHub Logo" className={styles.logoimage}/></a>
+      <a href={'https://github.com/NicholG90/countdown'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
     </div>
     <div className={styles.screenshotContainer}>
       <img src={breaktimer} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>

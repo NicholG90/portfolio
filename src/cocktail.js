@@ -23,8 +23,8 @@ function Cocktail() {
     <div id="cocktail" className={styles.cocktail}>
       <Bounce right duration={2000}>
       <div className={styles.descriptor}>
-        <h2>A Cocktail App</h2>
-        <p>
+        <h2 className={styles.projectHeader}>A Cocktail App</h2>
+        <p className={styles.projectParagraph}>
           I was able to shake up this Cocktail App
         </p>
         <ul>
@@ -32,7 +32,7 @@ function Cocktail() {
           <li>Uses Firebase for OAuth and Database</li>
         </ul>
         <p>Check out a live demo <a href={'http://cocktails.gourlay.me'}>HERE</a></p>
-        <a href={'https://github.com/NicholG90/Cocktail-App'} target="_blank"><img src={github} altText="GitHub Logo" className={styles.logoimage}/></a>
+        <a href={'https://github.com/NicholG90/Cocktail-App'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
       </div>
       <div className={styles.screenshotContainer}>
         <img src={cocktailimage} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>
@@ -43,7 +43,7 @@ function Cocktail() {
         className={styles.modal}
         contentLabel="Ingredients Modal"
       >
-      <iframe src={'http://cocktails.gourlay.me'} width="100%" height="100%"></iframe>
+      <iframe src={'http://cocktails.gourlay.me'} width="100%" height="100%" title="Cocktail App iFrame"></iframe>
         <button onClick={closeModal}>close</button>
       </Modal>
     </Bounce>

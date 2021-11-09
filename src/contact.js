@@ -24,7 +24,7 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <div className={styles.contactForm}>
+    <div id="contactform" className={styles.contactForm}>
       <h2>Get in Touch!</h2>
     <form onSubmit={handleSubmit} id="contact" className={styles.form}>
       <div className={styles.nameemail}>

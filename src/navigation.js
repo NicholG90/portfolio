@@ -1,17 +1,14 @@
-import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React from "react";
+import { Link } from "react-scroll";
 import styles from './navigation.module.css'
 
 
 function Navigation(props){
-    const [click, setClick] = useState(false);
-    const closeMobileMenu = () => setClick(false);
-
 
     return (
         <>
            <ul className={styles.navList}>
-            <li>
+            <li className={styles.listItem}>
                 <Link
                     activeClass="active"
                     to="about"
@@ -21,7 +18,7 @@ function Navigation(props){
                     duration={500}
                 >About</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
                 <Link
                     activeClass="active"
                     to="cocktail"
@@ -31,7 +28,7 @@ function Navigation(props){
                     duration={500}
                 >Portfolio</Link>
             </li>
-            <li>
+            <li className={styles.listItem}>
                 <Link
                     activeClass="active"
                     to="contactform"

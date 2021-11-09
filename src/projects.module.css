@@ -34,12 +34,23 @@
     justify-content: center;
 }
 
+.projectHeader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #f4a261;
+}
 
+.projectParagraph {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #f4a261;
+}
 
 @media (max-width: 690px) {
     .cocktail, .breaktimer{
         flex-direction: column-reverse;
         padding-top: 75px;
+        height: auto;
     }
     .screenshotContainer {
         width: calc(100% - 20px);

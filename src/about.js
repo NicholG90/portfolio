@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import styles from './about.module.css'
 import profileimage from "./assets/profile.JPG";
 import github from "./assets/github.png";
@@ -9,7 +9,7 @@ function About() {
 
   return (
     <div id="about" className={styles.about}>
-      <img src={profileimage} alt="Profile Image" className={styles.profileimage}/>
+      <img src={profileimage} alt="Nick Gourlay Headshot" className={styles.profileimage}/>
       <div className={styles.aboutText}>
       <header>
       <h2 className={styles.intro}>Hi! <br/>
@@ -30,8 +30,8 @@ function About() {
               > in touch.</Link>
       </p>
       <div className={styles.logos}>
-        <a href={'https://github.com/NicholG90'} target="_blank"><img src={github} altText="GitHub Logo" className={styles.logoimage}/></a>
-        <a href={'https://github.com/NicholG90'} target="_blank"><img src={linkedin} altText="LinkedIn Logo" className={styles.logoimage}/></a>
+        <a href={'https://github.com/NicholG90'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
+        <a href={'https://github.com/NicholG90'} target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn Logo" className={styles.logoimage}/></a>
       </div>
       </div>
     </div>
