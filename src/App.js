@@ -5,7 +5,7 @@ import Navigation from './navigation';
 import Main from  './main';
 
 
-var styles = {
+var burgerstyles = {
     bmBurgerButton: {
       position: 'fixed',
       width: '36px',
@@ -58,16 +58,14 @@ class App extends React.Component {
 
 
   render () {
-    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <div id="outer-container">
-      <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+      <Menu styles={ burgerstyles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
         <Navigation />
       </Menu>
       <main id="page-wrap">
         <Main />
       </main>
-      <footer>Nick Gourlay ©2021</footer>
       </div>
     );
   }

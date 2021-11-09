@@ -1,24 +1,29 @@
-.cocktail {
+.cocktail, .breaktimer {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: #264653;
-    padding-top: 75px;
+    /* background-color: #264653; */
+    height: 70vh;
+    padding-bottom: 10vh;
+    overflow: hidden;
 }
 
 .breaktimer {
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #264653;
-    padding-top: 50px;
+
+}
+
+.screenshotContainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 2vw 2vw 2vw 2vw;
 }
 
 .screenshot {
-    width: 50%;
-    margin: 2vw 2vw 2vw 2vw;
+    width: 100%;
+    height: auto;
 }
 
 .descriptor {
@@ -36,7 +41,7 @@
         flex-direction: column-reverse;
         padding-top: 75px;
     }
-    .screenshot {
+    .screenshotContainer {
         width: calc(100% - 20px);
         margin: 10px 10px 10px 10px;
     }

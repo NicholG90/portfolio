@@ -16,6 +16,7 @@ function Main(props) {
         <BreakTimer />
         <Weighttracker />
         <ContactForm />
+        <footer>Nick Gourlay ©2021</footer>
         </>
     )
 }

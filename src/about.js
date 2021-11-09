@@ -15,7 +15,7 @@ function About() {
       <h2 className={styles.intro}>Hi! <br/>
       I'm Nick, a junior front-end web developer.</h2>
       </header>
-      <p>
+      <p className={styles.introDetails}>
         I've most recently been working in ReactJS but also have a broad level of expertise.<br/>
         I've also built a good background in DevOps, especially with Docker, while experimenting on my home server<br/>
         If you think we could work together please get  
