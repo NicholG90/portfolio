@@ -46,6 +46,16 @@
     color: #f4a261;
 }
 
+.logoimage {
+    width: 50px;
+    margin: 5px;
+}
+
+
+.logoimage:hover {
+    filter: invert(87%) sepia(18%) saturate(6276%) hue-rotate(318deg) brightness(106%) contrast(91%);
+}
+
 @media (max-width: 690px) {
     .cocktail, .breaktimer{
         flex-direction: column-reverse;

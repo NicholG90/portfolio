@@ -37,6 +37,9 @@
     margin: 5px;
 }
 
+.logoimage:hover {
+    filter: invert(70%) sepia(38%) saturate(5720%) hue-rotate(326deg) brightness(95%) contrast(90%);
+}
 
 .profileimage {
     width: 35vw;
