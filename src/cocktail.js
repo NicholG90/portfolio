@@ -11,11 +11,11 @@ function Cocktail() {
       <div className={styles.descriptor}>
         <h2 className={styles.projectHeader}>A Cocktail App</h2>
         <ul className={styles.techList}>
-          <li>ReactJS</li>
-          <li>Firebase OAuth and Database</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>API</li>
+          <li className={styles.techItem}>ReactJS</li>
+          <li className={styles.techItem}>Firebase OAuth and Database</li>
+          <li className={styles.techItem}>HTML5</li>
+          <li className={styles.techItem}>CSS3</li>
+          <li className={styles.techItem}>API</li>
         </ul>
         <p className={styles.projectParagraph}>
           I put together a cocktail app that allows the user to search for specific cocktails, find cocktails based on the ingredients they have on hand and even just choose a random cocktail. Written in React with a Firebase database backend and OAth for users to save their favourite cocktails. 

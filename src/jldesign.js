@@ -12,10 +12,10 @@ function Jldesign() {
       <div className={styles.descriptor}>
         <h2 className={styles.projectHeader}>JL Design Architecture Portfolio</h2>
         <ul className={styles.techList}>
-          <li>ReactJS</li>
-          <li>Nodemailer and NodeJS</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
+          <li className={styles.techItem}>ReactJS</li>
+          <li className={styles.techItem}>Nodemailer and NodeJS</li>
+          <li className={styles.techItem}>HTML5</li>
+          <li className={styles.techItem}>CSS3</li>
         </ul>
         <p className={styles.projectParagraph}>
           I worked with a small architectural firm in South Westen Ontario to put together a portfolio website that puts their designs front and centre.

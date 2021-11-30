@@ -11,9 +11,9 @@ function BreakTimer() {
     <div className={styles.descriptor}>
       <h2 className={styles.projectHeader}>A Break Timer</h2>
       <ul className={styles.techList}>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JQUERY</li>
+        <li className={styles.techItem}>HTML5</li>
+        <li className={styles.techItem}>CSS3</li>
+        <li className={styles.techItem}>JQUERY</li>
       </ul>
       <p className={styles.projectParagraph}>
         A simple break timer built in with JQUERY. It allows the user to select a sepcific time length for their break or select from some popular choices. The timer then displays the amount of time remaining with styling changes to show how long is remaining.

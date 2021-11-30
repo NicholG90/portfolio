@@ -1,21 +1,36 @@
 .cocktail, .breaktimer, .jldesign {
-    width: 100%;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 0;
+    padding-right: 10vw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    height: 70vh;
-    padding-bottom: 10vh;
+    height: auto;
+    padding-bottom: 50px;
     overflow: hidden;
+    margin-bottom: 200px;
+    background-color: #8FC0A9;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 47%);
 }
 
 .breaktimer, .jldesign {
     flex-direction: row;
+    margin-left: 0;
+    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 0;
 }
 
 .techList {
     display: flex;
     flex-direction: row;
     color: #8B2635;
+}
+
+.techItem {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .screenshotContainer {
@@ -46,7 +61,7 @@
 .projectHeader {
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
-    color: #f4a261;
+    color: #774C60;
 }
 
 .projectParagraph {
@@ -68,7 +83,7 @@
     border-color: #36383a;
     border-width: 2px;
     border-style: solid;
-    box-shadow: 1px 1px 10px #666666, -1px -1px 5px #ffffff;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 47%);
 }
 
 .linkButton:hover {

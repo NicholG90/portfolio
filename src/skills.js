@@ -16,7 +16,7 @@ function Skills() {
   return (
     <div id="skills" className={styles.skills}>
         <div>
-            <h2>My Toolbox</h2>
+            <h2>Skills and Technologies</h2>
             <ul className={styles.skillsList}>
                 <li className={styles.skillsItem}><img src={css3} alt="CSS3 Logo" className={styles.logoimage}/><div className={styles.skillsText}>CSS3</div></li>
                 <li className={styles.skillsItem}><img src={react} alt="React Logo" className={styles.logoimage}/><div className={styles.skillsText}>ReactJS</div></li>
