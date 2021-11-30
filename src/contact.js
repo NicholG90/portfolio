@@ -27,21 +27,19 @@ const ContactForm = () => {
     <div id="contactform" className={styles.contactForm}>
       <h2>Get in Touch!</h2>
     <form onSubmit={handleSubmit} id="contact" className={styles.form}>
-      <div className={styles.nameemail}>
-      <div>
+      <div className={styles.input}>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
+        <input type="text" id="name" placeholder="name" required />
       </div>
-      <div>
+      <div className={styles.input}>
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
+        <input type="email" id="email" placeholder="email address" required />
       </div>
       <div className={styles.message}>
         <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
+        <textarea id="message" placeholder="get in touch!" required />
       </div>
-      <button type="submit">{status}</button>
+      <button type="submit" className={styles.submit}>{status}</button>
     </form>
   </div>
   );

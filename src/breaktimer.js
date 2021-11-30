@@ -1,52 +1,31 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React from 'react';
 import styles from './projects.module.css'
 import breaktimer from "./assets/breaktimer.jpg";
-import github from "./assets/github.png";
-import Bounce from 'react-reveal/Bounce';
-
-
-
 
 
 function BreakTimer() {
-    const [modalIsOpen,setIsOpen] = useState(false);
-    function openModal() {
-      setIsOpen(true);
-    }
-  
-    function closeModal(){
-      setIsOpen(false);
-    }
-  
+
 
   return (
     <div id="breaktimer" className={styles.breaktimer}>
-    <Bounce left duration={2000}>
     <div className={styles.descriptor}>
-      <h2>This is a Break Timer App</h2>
-      <p>
-        Built this cocktail app blah blah
-      </p>
-      <ul>
-        <li>Built with JQuery</li>
-        <li>HTML/CSS</li>
+      <h2 className={styles.projectHeader}>A Break Timer</h2>
+      <ul className={styles.techList}>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JQUERY</li>
       </ul>
-      <p>Check out a live demo <a href={'http://countdown.gourlay.me'}>HERE</a></p>
-      <a href={'https://github.com/NicholG90/countdown'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
+      <p className={styles.projectParagraph}>
+        A simple break timer built in with JQUERY. It allows the user to select a sepcific time length for their break or select from some popular choices. The timer then displays the amount of time remaining with styling changes to show how long is remaining.
+      </p>
+      <div className={styles.projectButtons}>
+      <button className={styles.linkButton}><a href={'http://countdown.gourlay.me'}>Live Project</a></button>
+      <button className={styles.linkButton}><a href={'https://github.com/NicholG90/countdown'}>Github Link</a></button>
+      </div>
     </div>
     <div className={styles.screenshotContainer}>
-      <img src={breaktimer} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>
+      <img src={breaktimer} alt="Cocktail Website" className={styles.screenshot}/>
     </div>  
-    <Modal
-      isOpen={modalIsOpen}
-      onRequestClose={closeModal}
-      className={styles.modal}
-      contentLabel="Ingredients Modal"
-    >
-      <button onClick={closeModal}>close</button>
-    </Modal>
-  </Bounce>  
   </div>
   );
 }

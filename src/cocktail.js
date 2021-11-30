@@ -1,52 +1,33 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React from 'react';
 import styles from './projects.module.css'
-import cocktailimage from "./assets/cocktail.jpg";
-import github from "./assets/github.png";
-import Bounce from 'react-reveal/Bounce';
-
-
+import cocktailimage from "./assets/cocktail.png";
 
 
 function Cocktail() {
-    const [modalIsOpen,setIsOpen] = useState(false);
-    function openModal() {
-      setIsOpen(true);
-    }
-  
-    function closeModal(){
-      setIsOpen(false);
-    }
-  
+
 
   return (
     <div id="cocktail" className={styles.cocktail}>
-      <Bounce right duration={2000}>
       <div className={styles.descriptor}>
         <h2 className={styles.projectHeader}>A Cocktail App</h2>
-        <p className={styles.projectParagraph}>
-          I was able to shake up this Cocktail App
-        </p>
-        <ul>
-          <li>Built with ReactJS</li>
-          <li>Uses Firebase for OAuth and Database</li>
+        <ul className={styles.techList}>
+          <li>ReactJS</li>
+          <li>Firebase OAuth and Database</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>API</li>
         </ul>
-        <p>Check out a live demo <a href={'http://cocktails.gourlay.me'}>HERE</a></p>
-        <a href={'https://github.com/NicholG90/Cocktail-App'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
+        <p className={styles.projectParagraph}>
+          I put together a cocktail app that allows the user to search for specific cocktails, find cocktails based on the ingredients they have on hand and even just choose a random cocktail. Written in React with a Firebase database backend and OAth for users to save their favourite cocktails. 
+        </p>
+        <div className={styles.projectButtons}>
+        <button className={styles.linkButton}><a href={'http://cocktails.gourlay.me'} >Live Project</a></button>
+        <button className={styles.linkButton}><a href={'https://github.com/NicholG90/Cocktail-App'} >Github Link</a></button>
+        </div>
       </div>
       <div className={styles.screenshotContainer}>
-        <img src={cocktailimage} alt="Cocktail Website" className={styles.screenshot} onClick={openModal}/>
+        <img src={cocktailimage} alt="Cocktail Website" className={styles.screenshot}/>
       </div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className={styles.modal}
-        contentLabel="Ingredients Modal"
-      >
-      <iframe src={'http://cocktails.gourlay.me'} width="100%" height="100%" title="Cocktail App iFrame"></iframe>
-        <button onClick={closeModal}>close</button>
-      </Modal>
-    </Bounce>
     </div>
   );
 }

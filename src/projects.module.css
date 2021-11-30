@@ -1,17 +1,21 @@
-.cocktail, .breaktimer {
+.cocktail, .breaktimer, .jldesign {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    /* background-color: #264653; */
     height: 70vh;
     padding-bottom: 10vh;
     overflow: hidden;
 }
 
-.breaktimer {
+.breaktimer, .jldesign {
     flex-direction: row;
+}
 
+.techList {
+    display: flex;
+    flex-direction: row;
+    color: #8B2635;
 }
 
 .screenshotContainer {
@@ -24,6 +28,11 @@
 .screenshot {
     width: 100%;
     height: auto;
+    border-color: #36383a;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 47%);
 }
 
 .descriptor {
@@ -43,21 +52,33 @@
 .projectParagraph {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    color: #f4a261;
+    color: #001B2E;
 }
 
-.logoimage {
-    width: 50px;
-    margin: 5px;
+.projectButtons {
+    flex-direction: row;
+    justify-content: center;
 }
 
-
-.logoimage:hover {
-    filter: invert(87%) sepia(18%) saturate(6276%) hue-rotate(318deg) brightness(106%) contrast(91%);
+.linkButton {
+    margin-right:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+    border-color: #36383a;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 1px 1px 10px #666666, -1px -1px 5px #ffffff;
 }
+
+.linkButton:hover {
+    background-color: #f4a261;
+    transition: 250ms;
+}
+
 
 @media (max-width: 690px) {
-    .cocktail, .breaktimer{
+    .cocktail, .breaktimer, .jldesign{
         flex-direction: column-reverse;
         padding-top: 75px;
         height: auto;

@@ -31,6 +31,16 @@ function Navigation(props){
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Skills</Link>
+            </li>
+            <li className={styles.listItem}>
+                <Link
+                    activeClass="active"
                     to="contactform"
                     spy={true}
                     smooth={true}

@@ -1,0 +1,19 @@
+.logoimage {
+    width: 50px;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillsItem {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skillsText {
+    text-align: center;
+}

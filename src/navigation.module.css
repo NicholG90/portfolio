@@ -5,4 +5,5 @@
 
 .listItem:hover {
     color: #e9c46a;
+    transition: 250ms;
 }
