@@ -24,8 +24,9 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
+    <>
+    <h2 className={styles.contactHeader}>Get in Touch</h2>
     <div id="contactform" className={styles.contactForm}>
-      <h2 className={styles.contactHeader}>Get in Touch</h2>
     <form onSubmit={handleSubmit} id="contact" className={styles.form}>
       <div className={styles.input}>
         <label htmlFor="name">Name:</label>
@@ -42,6 +43,7 @@ const ContactForm = () => {
       <button type="submit" className={styles.submit}>{status}</button>
     </form>
   </div>
+  </>
   );
 };
 
