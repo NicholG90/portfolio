@@ -11,22 +11,32 @@ function Navigation(props){
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
+                    to="hello"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Hello</Link>
+            </li>
+            <li className={styles.listItem}>
+                <Link
+                    activeClass="active"
+                    to="jldesign"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Portfolio</Link>
+            </li>
+            <li className={styles.listItem}>
+            <Link
+                    activeClass="active"
                     to="about"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
                 >About</Link>
-            </li>
-            <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="cocktail"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >Portfolio</Link>
             </li>
             <li className={styles.listItem}>
                 <Link

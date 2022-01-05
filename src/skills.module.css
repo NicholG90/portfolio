@@ -1,4 +1,7 @@
 .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -7,16 +10,24 @@
     width: 50px;
 }
 
+.skillsHeader {
+    font-size: 3rem;
+}
+
 .skillsList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .skillsItem {
     margin-left: 20px;
     margin-right: 20px;
+    width: 75px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .skillsText {

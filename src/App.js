@@ -1,5 +1,5 @@
 import './App.css';
-import { elastic as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 import React from 'react';
 import Navigation from './navigation';
 import Main from  './main';

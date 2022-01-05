@@ -8,7 +8,7 @@ import Skills from "./skills";
 import ContactForm from "./contact";
 import styles from './main.module.css'
 import Fade from 'react-reveal/Fade';
-
+import AboutMe from './aboutme'
 
 
 function Main(props) {
@@ -30,6 +30,9 @@ function Main(props) {
         </Fade>
         {/* <Weighttracker /> */}
         </div>
+        <Fade right duration={1500}>
+            <AboutMe />
+        </Fade>
         <Fade up duration={1000}>
             <Skills />
             <ContactForm />

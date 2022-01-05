@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './projects.module.css'
 import breaktimer from "./assets/breaktimer.jpg";
+import breaktimermobile from "./assets/breaktimermobile.png";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 
 
 function BreakTimer() {
@@ -16,7 +20,7 @@ function BreakTimer() {
         <li className={styles.techItem}>JQUERY</li>
       </ul>
       <p className={styles.projectParagraph}>
-        A simple break timer built in with JQUERY. It allows the user to select a sepcific time length for their break or select from some popular choices. The timer then displays the amount of time remaining with styling changes to show how long is remaining.
+        A break timer built with JQUERY. It allows the user to select a specific time length for their break or choose from some popular choices. The timer then displays the amount of time remaining with real time styling changes to show how long is remaining.
       </p>
       <div className={styles.projectButtons}>
       <button className={styles.linkButton}><a href={'http://countdown.gourlay.me'}>Live Project</a></button>
@@ -24,7 +28,8 @@ function BreakTimer() {
       </div>
     </div>
     <div className={styles.screenshotContainer}>
-      <img src={breaktimer} alt="Cocktail Website" className={styles.screenshot}/>
+      <Zoom><img src={breaktimer} alt="Break Timer Website" className={styles.screenshot}/></Zoom>
+      <Zoom><img src={breaktimermobile} alt="Break Timer Website" className={styles.screenshotMobile}/></Zoom>
     </div>  
   </div>
   );

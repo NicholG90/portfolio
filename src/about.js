@@ -9,11 +9,11 @@ import arrow from "./assets/angle-down-solid.svg";
 function About() {
 
   return (
-    <div id="about" className={styles.about}>
+    <div id="hello" className={styles.about}>
       <img src={profileimage} alt="Nick Gourlay Headshot" className={styles.profileImage}/>
       <div className={styles.aboutText}>
       <header>
-      <p className={styles.intro}>Hi! I'm</p>
+      <p className={styles.intro}>Hello! I'm</p>
       <p className={styles.name}> Nick Gourlay</p>
       <p className={styles.oneLiner}> a junior front-end web developer.</p>
       </header>

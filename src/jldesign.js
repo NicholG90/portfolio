@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './projects.module.css'
 import jldesignimage from "./assets/jldesign.png";
-
+import jldesignmobile from "./assets/jldesignmobile.png"
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 function Jldesign() {
 
@@ -27,7 +29,8 @@ function Jldesign() {
         </div>
       </div>
       <div className={styles.screenshotContainer}>
-        <img src={jldesignimage} alt="John Lucente Website" className={styles.screenshot}/>
+        <Zoom><img src={jldesignimage} alt="John Lucente Website" className={styles.screenshot}/></Zoom>
+        <Zoom><img src={jldesignmobile} alt="John Lucente Website" className={styles.screenshotMobile}/></Zoom>
       </div>
     </div>
   );

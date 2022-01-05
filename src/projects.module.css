@@ -1,5 +1,4 @@
 .cocktail, .breaktimer, .jldesign {
-    width: 80vw;
     margin-left: 10vw;
     margin-right: 0;
     padding-right: 10vw;
@@ -38,6 +37,7 @@
     align-items: center;
     width: 50%;
     margin: 2vw 2vw 2vw 2vw;
+    justify-content: center;
 }
 
 .screenshot {
@@ -48,6 +48,10 @@
     border-style: solid;
     border-radius: 10px;
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 47%);
+}
+
+.screenshotMobile {
+    display: none;
 }
 
 .descriptor {
@@ -62,12 +66,14 @@
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     color: #774C60;
+    margin-bottom: 0;
 }
 
 .projectParagraph {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     color: #001B2E;
+    margin-top: 0;
 }
 
 .projectButtons {
@@ -104,5 +110,27 @@
     }
     .descriptor {
         width: 100%;
+    }
+
+    .cocktail, .breaktimer, .jldesign {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        box-shadow: -1px 10px 5px 0px rgb(0 0 0 / 47%);
+    }
+
+    .projectHeader {
+        font-size: 2.5rem;
+    }
+
+    .screenshot {
+        display: none;
+    }
+
+    .screenshotMobile {
+        display: flex;
+        height: 300px;
     }
 }
