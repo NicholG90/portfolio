@@ -13,7 +13,7 @@ function Cocktail() {
   return (
     <div id="cocktail" className={styles.cocktail}>
       <div className={styles.descriptor}>
-        <h2 className={styles.projectHeader}>A Cocktail App</h2>
+        <h2 className={styles.projectHeader}>Cocktail App</h2>
         <ul className={styles.techList}>
           <li className={styles.techItem}>ReactJS</li>
           <li className={styles.techItem}>Firebase OAuth and Database</li>

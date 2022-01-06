@@ -19,7 +19,7 @@ function About() {
       </header>
       <p className={styles.introDetails}>
         I've most recently been working in ReactJS but also have a broad level of expertise.<br/>
-        I've also built a good background in DevOps, especially with Docker, while experimenting on my home server<br/>
+        I've also built a good background in DevOps, especially with Docker, while experimenting on my home server.<br/>
         If you think we could work together please get  
             <Link
                   activeClass="active"

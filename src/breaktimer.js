@@ -13,14 +13,14 @@ function BreakTimer() {
   return (
     <div id="breaktimer" className={styles.breaktimer}>
     <div className={styles.descriptor}>
-      <h2 className={styles.projectHeader}>A Break Timer</h2>
+      <h2 className={styles.projectHeader}>Break Timer</h2>
       <ul className={styles.techList}>
         <li className={styles.techItem}>HTML5</li>
         <li className={styles.techItem}>CSS3</li>
         <li className={styles.techItem}>JQUERY</li>
       </ul>
       <p className={styles.projectParagraph}>
-        A break timer built with JQUERY. It allows the user to select a specific time length for their break or choose from some popular choices. The timer then displays the amount of time remaining with real time styling changes to show how long is remaining.
+        A break timer built with JQUERY. It allows the user to select a specific time length for their break or choose from some popular choices. The timer then displays the amount of remaining with real-time styling changes.
       </p>
       <div className={styles.projectButtons}>
       <button className={styles.linkButton}><a href={'http://countdown.gourlay.me'}>Live Project</a></button>

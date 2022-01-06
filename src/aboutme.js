@@ -6,9 +6,9 @@ function AboutMe() {
 
     return(
         <div id="about" className={styles.aboutMe}>
-            <h2 className={styles.aboutMeHeader}>A little more about me</h2>
+            <h2 className={styles.aboutMeHeader}>About me</h2>
             <p className={styles.aboutMePara}>
-            I'm a front-end web developer with a a strong managerial and operations background. My 7 years of operations experience has given me a strong foundation for both problem solving and building complex solutions while reinforcing my communication and analytical skills. Prior to that I graduated from the University of Toronto with a BA.
+            I'm a front-end web developer with a strong managerial and operations background. My 7 years of operations experience has given me a effective foundation for both problem solving and building complex solutions while reinforcing my communication and analytical skills. Prior to that I graduated from the University of Toronto with a BA.
             I'm looking forward to joining a team alongside other skilled programmers and continuining to hone my development skills.
             <br />
             <br />

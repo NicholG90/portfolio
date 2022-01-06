@@ -72,8 +72,12 @@
     border-radius: 50%;
 }
 
-.link:hover {
+.link {
     color: #F4A261;
+    transition: 250ms;
+}
+.link:hover {
+    color: #8FC0A9;
     transition: 250ms;
 }
 

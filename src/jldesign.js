@@ -20,7 +20,7 @@ function Jldesign() {
           <li className={styles.techItem}>CSS3</li>
         </ul>
         <p className={styles.projectParagraph}>
-          I worked with a small architectural firm in South Westen Ontario to put together a portfolio website that puts their designs front and centre.
+          I worked with an architectural firm in South Westen Ontario to build a portfolio website that puts their designs front and centre.
           Built in React and using NodeJS with Nodemailer for the backend contact form. 
         </p>
         <div className={styles.projectButtons}>
