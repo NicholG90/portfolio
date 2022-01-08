@@ -13,7 +13,7 @@ function BreakTimer() {
   return (
     <div id="breaktimer" className={styles.breaktimer}>
     <div className={styles.descriptor}>
-      <h2 className={styles.projectHeader}>Break Timer</h2>
+      <h2 className={styles.projectHeader}>Break Time</h2>
       <ul className={styles.techList}>
         <li className={styles.techItem}>HTML5</li>
         <li className={styles.techItem}>CSS3</li>
