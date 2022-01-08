@@ -33,7 +33,7 @@ function About() {
       </p>
       <div className={styles.logos}>
         <a href={'https://github.com/NicholG90'} target="_blank" rel="noreferrer"><img src={github} alt="GitHub Logo" className={styles.logoimage}/></a>
-        <a href={'https://github.com/NicholG90'} target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn Logo" className={styles.logoimage}/></a>
+        <a href={'https://www.linkedin.com/in/nickgourlay/'} target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn Logo" className={styles.logoimage}/></a>
       </div>
       <Link
                   activeClass="active"
