@@ -1,3 +1,6 @@
+@import "./mixins.scss";
+@import "./_variables.scss";
+
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -58,6 +61,5 @@ textarea {
   }
 
   .contactHeader {
-    font-size: 3rem;
-    margin-left: 10vw;
+    @include headers();
   }

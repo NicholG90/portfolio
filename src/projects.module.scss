@@ -1,4 +1,7 @@
-.cocktail, .breaktimer, .jldesign {
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+.project {
     margin-left: 10vw;
     margin-right: 0;
     padding-right: 10vw;
@@ -13,13 +16,13 @@
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 47%);
 }
 
-.breaktimer, .jldesign {
-    flex-direction: row;
-    margin-left: 0;
-    margin-right: 10vw;
-    padding-left: 10vw;
-    padding-right: 0;
-}
+// .breaktimer, .jldesign {
+//     flex-direction: row;
+//     margin-left: 0;
+//     margin-right: 10vw;
+//     padding-left: 10vw;
+//     padding-right: 0;
+// }
 
 .techList {
     display: flex;
@@ -99,7 +102,7 @@
 
 
 @media (max-width: 690px) {
-    .cocktail, .breaktimer, .jldesign{
+    .project {
         flex-direction: column-reverse;
         padding-top: 75px;
         height: auto;
@@ -112,14 +115,14 @@
         width: 100%;
     }
 
-    .cocktail, .breaktimer, .jldesign {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        box-shadow: -1px 10px 5px 0px rgb(0 0 0 / 47%);
-    }
+    // .cocktail, .breaktimer, .jldesign {
+    //     text-align: center;
+    //     margin-left: 0;
+    //     margin-right: 0;
+    //     padding-left: 10vw;
+    //     padding-right: 10vw;
+    //     box-shadow: -1px 10px 5px 0px rgb(0 0 0 / 47%);
+    // }
 
     .projectHeader {
         font-size: 2.5rem;

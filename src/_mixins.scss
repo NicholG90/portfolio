@@ -1,0 +1,10 @@
+@import "./_variables.scss";
+@mixin headers {
+    font-family: $headingfont;
+    text-transform: lowercase;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    background-image: linear-gradient(360deg, transparent 10%, #fdf4b4 10%, #fdf4b4 40%, transparent 40%);
+}

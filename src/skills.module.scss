@@ -1,9 +1,10 @@
+@import "./_variables.scss";
+@import "./mixins.scss";
+
 .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }
 
 .logoimage {
@@ -11,7 +12,7 @@
 }
 
 .skillsHeader {
-    font-size: 3rem;
+    @include headers();
 }
 
 .skillsList {

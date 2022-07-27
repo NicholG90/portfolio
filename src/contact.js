@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from './contact.module.css'
+import styles from './contact.module.scss'
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -24,7 +24,7 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <>
+    <div className="wrapper">
     <h2 className={styles.contactHeader}>Get in Touch</h2>
     <div id="contactform" className={styles.contactForm}>
     <form onSubmit={handleSubmit} id="contact" className={styles.form}>
@@ -43,7 +43,7 @@ const ContactForm = () => {
       <button type="submit" className={styles.submit}>{status}</button>
     </form>
   </div>
-  </>
+  </div>
   );
 };
 
