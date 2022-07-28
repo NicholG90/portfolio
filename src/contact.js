@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from './contact.module.scss'
+import Heading from "./heading"
+
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -24,26 +26,28 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <div className="wrapper">
-    <h2 className={styles.contactHeader}>Get in Touch</h2>
-    <div id="contactform" className={styles.contactForm}>
-    <form onSubmit={handleSubmit} id="contact" className={styles.form}>
-      <div className={styles.input}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" placeholder="name" required />
+    <div className={styles.contact}>
+      <div className="wrapper">
+        <Heading title="Get in Touch" />
+        <div id="contactform" className={styles.contactForm}>
+          <form onSubmit={handleSubmit} id="contact" className={styles.form}>
+            <div className={styles.input}>
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" placeholder="name" required />
+            </div>
+            <div className={styles.input}>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" placeholder="email address" required />
+            </div>
+            <div className={styles.message}>
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" placeholder="get in touch!" required />
+            </div>
+            <button type="submit" className={styles.submit}>{status}</button>
+          </form>
+        </div>
       </div>
-      <div className={styles.input}>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" placeholder="email address" required />
-      </div>
-      <div className={styles.message}>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" placeholder="get in touch!" required />
-      </div>
-      <button type="submit" className={styles.submit}>{status}</button>
-    </form>
-  </div>
-  </div>
+    </div>
   );
 };
 

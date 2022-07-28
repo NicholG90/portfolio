@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './skills.module.scss'
+import Heading from "./heading"
 import github from "./assets/github.svg"
 import docker from "./assets/docker.svg"
 import git from "./assets/git.svg"
@@ -16,7 +17,7 @@ function Skills() {
   return (
     <div id="skills" className={styles.skills}>
         <div className='wrapper'>
-            <h2 className={styles.skillsHeader}>Skills and Technologies</h2>
+            <Heading title="Skills and Tech" />
             <ul className={styles.skillsList}>
                 <li className={styles.skillsItem}><img src={css3} alt="CSS3 Logo" className={styles.logoimage}/><div className={styles.skillsText}>CSS3</div></li>
                 <li className={styles.skillsItem}><img src={react} alt="React Logo" className={styles.logoimage}/><div className={styles.skillsText}>ReactJS</div></li>

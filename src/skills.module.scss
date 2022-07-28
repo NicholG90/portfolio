@@ -11,9 +11,6 @@
     width: 50px;
 }
 
-.skillsHeader {
-    @include headers();
-}
 
 .skillsList {
     display: flex;

@@ -3,9 +3,17 @@ import styles from './projects.module.scss'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
-function Projects({ projectName, projectTech, projectDescription, projectLiveLink, projectGithubLink, projectDesktopImage, projectMobileImage}) {
+function Projects(
+  { projectName, 
+    projectTech, 
+    projectDescription, 
+    projectLiveLink, 
+    projectGithubLink, 
+    projectDesktopImage, 
+    projectMobileImage,
+    projectID}) {
   return (
-    <div className={styles.project}>
+    <div className={styles[projectID]}>
       <div className={styles.descriptor}>
               <h2 className={styles.projectHeader}>{projectName}</h2>
         <ul className={styles.techList}>

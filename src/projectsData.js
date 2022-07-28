@@ -6,7 +6,8 @@ export const ProjectData = [
         projectLiveLink: "http://jldesign.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/JLDesign",
         projectDesktopImage: "./assets/jldesign.png",
-        projectMobileImage: "./assets/jldesignmobile.png"
+        projectMobileImage: "./assets/jldesignmobile.png",
+        projectID: "jldesign"
         
     },
     {
@@ -16,7 +17,8 @@ export const ProjectData = [
         projectLiveLink: "http://cocktails.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/CocktailApp",
         projectDesktopImage: "./assets/cocktail.png",
-        projectMobileImage: "./assets/cocktailmobile.png"      
+        projectMobileImage: "./assets/cocktailmobile.png",
+        projectID: "cocktail" 
     },
     {
         projectName: "Break Time",
@@ -25,7 +27,8 @@ export const ProjectData = [
         projectLiveLink: "http://countdown.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/countdown",
         projectDesktopImage: "./assets/breaktimer.jpg",
-        projectMobileImage: "./assets/breaktimermobile.jpg"
+        projectMobileImage: "./assets/breaktimermobile.jpg",
+        projectID: "breaktimer"
 
     }
 ]

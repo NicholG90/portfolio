@@ -1,7 +1,7 @@
 @import "./mixins.scss";
 @import "./_variables.scss";
 
-.project {
+.breaktimer, .jldesign, .cocktail {
     margin-left: 10vw;
     margin-right: 0;
     padding-right: 10vw;
@@ -16,13 +16,13 @@
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 47%);
 }
 
-// .breaktimer, .jldesign {
-//     flex-direction: row;
-//     margin-left: 0;
-//     margin-right: 10vw;
-//     padding-left: 10vw;
-//     padding-right: 0;
-// }
+.breaktimer, .jldesign {
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 0;
+}
 
 .techList {
     display: flex;
@@ -66,14 +66,12 @@
 }
 
 .projectHeader {
-    font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     color: #774C60;
     margin-bottom: 0;
 }
 
 .projectParagraph {
-    font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     color: #001B2E;
     margin-top: 0;
@@ -102,7 +100,7 @@
 
 
 @media (max-width: 690px) {
-    .project {
+    .cocktail, .breaktimer, .jldesign {
         flex-direction: column-reverse;
         padding-top: 75px;
         height: auto;

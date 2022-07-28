@@ -1,0 +1,10 @@
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+footer {
+    height: 5vh;
+    text-align: center;
+    font-size: 1rem;
+    color: #F4A261;
+    background-color: $offWhite;
+}

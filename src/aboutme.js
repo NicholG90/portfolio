@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './aboutme.module.scss'
 import profileimage from "./assets/profile.JPG";
+import Heading from "./heading"
 
 
 function AboutMe() {
@@ -11,8 +12,8 @@ function AboutMe() {
                 <div className={styles.imageContainer}>
                     <img src={profileimage} alt="Nick Gourlay Headshot" className={styles.profileImage} />
                 </div>
-                <div className={styles.test}></div>
-                <h2 className={styles.aboutMeHeader}>About me</h2>
+                <div className={styles.zigzag} aria-hidden="true"></div>
+                <Heading title="About Me" />
                 <p className={styles.aboutMePara}>
                 I'm a front-end web developer with a strong managerial and operations background. My 7 years of operations experience has given me a effective foundation for both problem solving and building complex solutions while reinforcing my communication and analytical skills. Prior to that I graduated from the University of Toronto with a BA.
                 I'm looking forward to joining a team alongside other skilled programmers and continuining to hone my development skills.

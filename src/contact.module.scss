@@ -1,6 +1,10 @@
 @import "./mixins.scss";
 @import "./_variables.scss";
 
+.contact {
+
+  background-color: $offWhite;
+}
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -58,8 +62,4 @@ textarea {
     background-color: #f4a261;
     border-radius: 5px;
     border: 2px solid #f4a261;
-  }
-
-  .contactHeader {
-    @include headers();
   }

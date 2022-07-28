@@ -2,13 +2,12 @@
 @import "./mixins.scss";
 
 .aboutMe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
     padding: 100px 0px;
 
     .imageContainer {
+        text-align: center;
+        padding-bottom: 25px;;
 
         .profileImage {
             width: 15vw;
@@ -16,23 +15,21 @@
         }
     }
 
-    .aboutMeHeader {
-        @include headers();
-    }
 
     .aboutMePara {
         font-size: 1rem;
         color: $fontPara;
         font-family: $paraFont;
         line-height: 1.4;
+        text-align: center;
     }
 
-    .test {
+    .zigzag {
         width: 100px;
         height: 10px;
-        background: 0 repeat-x url('data:image/svg+xml;utf-8,%3Csvg%20width%3D%2213px%22%20height%3D%2211px%22%20viewBox%3D%220%200%2018%2015%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cpolygon%20id%3D%22Combined-Shape%22%20fill%3D%22%2300bec5%22%20points%3D%228.98762301%200%200%209.12771969%200%2014.519983%209%205.40479869%2018%2014.519983%2018%209.12771969%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E');
+        background-image: url("./assets/ZigZag.svg");
+        background-repeat: repeat-x;
     }
-
 }
 
 
