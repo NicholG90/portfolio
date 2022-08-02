@@ -7,13 +7,12 @@ import Heading from "./heading"
 function AboutMe() {
 
     return(
-        <div id="aboutme" className={styles.aboutMe}>
+        <div className={styles.aboutMe}>
             <div className='wrapper'>
                 <div className={styles.imageContainer}>
                     <img src={profileimage} alt="Nick Gourlay Headshot" className={styles.profileImage} />
                 </div>
-                <div className={styles.zigzag} aria-hidden="true"></div>
-                <Heading title="About Me" />
+                <Heading title="about me" />
                 <p className={styles.aboutMePara}>
                 I'm a front-end web developer with a strong managerial and operations background. My 7 years of operations experience has given me a effective foundation for both problem solving and building complex solutions while reinforcing my communication and analytical skills. Prior to that I graduated from the University of Toronto with a BA.
                 I'm looking forward to joining a team alongside other skilled programmers and continuining to hone my development skills.

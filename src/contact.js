@@ -28,8 +28,8 @@ const ContactForm = () => {
   return (
     <div className={styles.contact}>
       <div className="wrapper">
-        <Heading title="Get in Touch" />
-        <div id="contactform" className={styles.contactForm}>
+        <Heading title="get in touch" />
+        <div  className={styles.contactForm}>
           <form onSubmit={handleSubmit} id="contact" className={styles.form}>
             <div className={styles.input}>
               <label htmlFor="name">Name:</label>
