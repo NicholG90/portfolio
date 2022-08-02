@@ -15,9 +15,9 @@ import css3 from "./assets/css3.svg"
 function Skills() {
 
   return (
-    <div id="skills" className={styles.skills}>
+    <div className={styles.skills}>
         <div className='wrapper'>
-            <Heading title="Skills and Tech" />
+            <Heading title="skills and tech" />
             <ul className={styles.skillsList}>
                 <li className={styles.skillsItem}><img src={css3} alt="CSS3 Logo" className={styles.logoimage}/><div className={styles.skillsText}>CSS3</div></li>
                 <li className={styles.skillsItem}><img src={react} alt="React Logo" className={styles.logoimage}/><div className={styles.skillsText}>ReactJS</div></li>

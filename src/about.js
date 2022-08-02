@@ -14,10 +14,10 @@ function About() {
             <h1 className={styles.name}> Nick Gourlay</h1>
             <h2 className={styles.oneLiner}> junior front-end web developer</h2>
             <p className={styles.introDetails}>
-              If you think we could work together please get  
+              If you'd like to work together please get  
                   <Link
                         activeClass="active"
-                        to="contact"
+                        to="get in touch"
                         spy={true}
                         smooth={true}
                         duration={500}
@@ -31,7 +31,7 @@ function About() {
           </div>
         <Link
           activeClass="active"
-          to="aboutme"
+          to="about me"
           spy={true}
           smooth={true}
           duration={500}

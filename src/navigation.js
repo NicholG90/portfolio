@@ -20,7 +20,7 @@ function Navigation(props){
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
-                    to="aboutme"
+                    to="about me"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -29,7 +29,7 @@ function Navigation(props){
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
-                    to="skills"
+                    to="skills and tech"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -38,16 +38,16 @@ function Navigation(props){
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
-                    to="jldesign"
+                    to="projects"
                     spy={true}
                     smooth={true}
                     duration={500}
-                >Portfolio</Link>
+                >Projects</Link>
             </li>
             <li className={styles.listItem}>
                 <Link
                     activeClass="active"
-                    to="contactform"
+                    to="get in touch"
                     spy={true}
                     smooth={true}
                     duration={500}

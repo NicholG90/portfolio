@@ -4,12 +4,12 @@ import Skills from "./skills";
 import ContactForm from "./contact";
 import styles from './main.module.scss';
 import AboutMe from './aboutme';
-import Projects from "./projects";
 import Heading from "./heading"
-import { ProjectData } from './projectsData';
+import Carousel  from "./carousel";
 
 
-function Main(props) {
+function Main() {
+
 
     return (
         <>
@@ -17,11 +17,13 @@ function Main(props) {
             <AboutMe />
             <Skills />
             <div className="wrapper">
-                <Heading title="Projects"/>
+                <Heading title="projects"/>
             </div>
-                {ProjectData.map((data, index) => {
-                    return <Projects {...data} key={data.projectID} />
-                })}
+            <div className={styles.projectsFull}>
+                <div className="wrapper">
+                    <Carousel />
+                </div>
+            </div>
             <ContactForm />
             <footer className={styles.footer}>Nick Gourlay ©2022</footer>
         </>

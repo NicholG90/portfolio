@@ -1,0 +1,19 @@
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.activeSlide {
+    opacity: 1;
+    transition-duration: 1s;
+}

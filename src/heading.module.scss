@@ -1,6 +1,21 @@
 @import "./_variables.scss";
 @import "./mixins.scss";
 
-.projectHeader {
-    @include headers();
+
+.heading {
+
+    padding: 100px 0px 50px 0;
+
+    .headerTitle {
+            @include headers();
+        }
+
+    .zigzag {
+        width: 100px;
+        height: 10px;
+        background-image: url("./assets/ZigZag.svg");
+        background-repeat: repeat-x;
+    }
+
+
 }
