@@ -5,7 +5,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     padding: 100px 0;
+
+    .arrowContainer {
+        height: fit-content;
+        margin: 0 25px;
+
+        .arrow {
+            width: 50px;
+            fill: $offWhite;
+            cursor: pointer;
+
+            &:hover {
+                filter: invert(51%) sepia(96%) saturate(981%) hue-rotate(140deg) brightness(92%) contrast(105%);
+            }
+        }
+        
+    }
 }
 
 .slide {

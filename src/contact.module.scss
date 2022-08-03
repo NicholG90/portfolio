@@ -2,64 +2,76 @@
 @import "./_variables.scss";
 
 .contact {
-
   background-color: $offWhite;
-}
-.contactForm {
+
+  .contactForm {
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding-bottom: 100px;
-    
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 25px;
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+
+        input {
+          border: 2px solid $primary;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 20px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .message {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      textarea {
+        resize: none;
+        height: 100px;
+        width: 100%;
+        border: 2px solid $primary;
+        padding-left: 5px;
+      }
+    }
+    .submit {
+      margin-top: 15px;
+      padding: 20px 45px;
+      width: fit-content;
+      text-transform: uppercase;
+      color: $offWhite;
+      background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
+      transition: background-position 0.5s;
+      background-size: 100% 200%;
+
+
+      &:hover{
+        background-position: 0 100%; 
+        transition: 0.5s;
+      }
+    }
+  }
 }
 
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 50%
-}
 
-.message {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-}
 
-textarea {
-    resize: none;
-    height: 100px;
-    width: 100%;
-    border: 2px solid #f4a261;
-    border-radius: 5px;
-    padding-left: 5px;
-  }
 
-  .input {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    
-  }
 
-  input {
-    border: 2px solid #f4a261;
-    border-radius: 5px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 5px;
-  }
 
-  .submit {
-    margin-top: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px; 
-    padding-left: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    background-color: #f4a261;
-    border-radius: 5px;
-    border: 2px solid #f4a261;
-  }
+
+
+
+
+
+

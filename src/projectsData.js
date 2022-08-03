@@ -1,7 +1,7 @@
 import jldesign from "./assets/jldesign.png";
 import cocktail from "./assets/cocktail.png";
-import breaktimer from "./assets/breaktimer.jpg";
-import recipe from "./assets/recipetest.png";
+import breaktimer from "./assets/breaktimer.png";
+import recipe from "./assets/recipe.png";
 
 
 
@@ -46,7 +46,7 @@ export const ProjectsData = [
         projectLiveLink: "http://countdown.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/countdown",
         projectDesktopImage: recipe,
-        projectID: "breaktimer"
+        projectID: "recipe"
 
     }
 ]

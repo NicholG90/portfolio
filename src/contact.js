@@ -32,15 +32,15 @@ const ContactForm = () => {
         <div  className={styles.contactForm}>
           <form onSubmit={handleSubmit} id="contact" className={styles.form}>
             <div className={styles.input}>
-              <label htmlFor="name">Name:</label>
+              <label htmlFor="name" className="sr-only">Name:</label>
               <input type="text" id="name" placeholder="name" required />
             </div>
             <div className={styles.input}>
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email" className="sr-only">Email Address:</label>
               <input type="email" id="email" placeholder="email address" required />
             </div>
             <div className={styles.message}>
-              <label htmlFor="message">Message:</label>
+              <label htmlFor="message" className="sr-only">Message:</label>
               <textarea id="message" placeholder="get in touch!" required />
             </div>
             <button type="submit" className={styles.submit}>{status}</button>

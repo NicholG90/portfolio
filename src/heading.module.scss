@@ -6,6 +6,11 @@
 
     padding: 100px 0px 50px 0;
 
+    @media (max-width: 700px){
+        text-align: center;
+
+    }
+    
     .headerTitle {
             @include headers();
         }
@@ -15,6 +20,11 @@
         height: 10px;
         background-image: url("./assets/ZigZag.svg");
         background-repeat: repeat-x;
+
+        @media (max-width: 700px) {
+            margin: 0 auto;
+    
+        }
     }
 
 

@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { ProjectsData } from './projectsData';
 import Projects from './projects';
 import styles from './carousel.module.scss'
+import leftarrow from "./assets/angle-left-solid.svg";
+import rightarrow from "./assets/angle-right-solid.svg";
 
 
 
-    function Carousel () {
+
+
+function Carousel () {
     const [current, setCurrent] = useState(0);
     const length = ProjectsData.length;
 
@@ -23,7 +27,7 @@ import styles from './carousel.module.scss'
 
     return (
         <section className={styles.projects}>
-            <button onClick={prevSlide}>Left</button>
+            <div onClick={prevSlide} className={styles.arrowContainer}><img src={leftarrow} alt="Left Arrow" className={styles.arrow} /><span className='sr-only'>Left</span></div>
             {ProjectsData.map((slide, index) => {
                 return (
                     <div className={index === current ? `${styles.activeSlide}` : `${styles.slide}`} key={index}>
@@ -33,7 +37,7 @@ import styles from './carousel.module.scss'
                     </div>
                 );
             })}
-            <button onClick={nextSlide}>Right</button>
+            <div onClick={nextSlide} className={styles.arrowContainer}><img src={rightarrow} alt="Right Arrow" className={styles.arrow} /><span className='sr-only'>Right</span></div>
         </section>
     );
 };
