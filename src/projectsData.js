@@ -2,29 +2,32 @@ import jldesign from "./assets/jldesign.png";
 import cocktail from "./assets/cocktail.png";
 import breaktimer from "./assets/breaktimer.png";
 import recipe from "./assets/recipe.png";
+import jldesignmobile from "./assets/jldesignmobile.png";
 
 
 
-export const ProjectsData = [
+export const projectsData = [
     {   
         id: 1,
         projectName: "JL Design Architecture Portfolio",
-        projectTech: ["ReactJS", "NodeMailer and NodeJS", "HTML5", "CSS3"],
+        projectTech: ["ReactJS", "NodeMailer", "HTML5", "CSS3"],
         projectDescription: "I worked with an architectural firm in South Western Ontario to build a portfolio website that puts their designs front and centre. Built in React and using NodeJS with Nodemailer for the backend contact form.",
         projectLiveLink: "http://jldesign.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/JLDesign",
         projectDesktopImage: jldesign,
+        projectMobileImage: jldesignmobile,
         projectID: "jldesign"
         
     },
     {
         id: 2,
         projectName: "Cocktail Shaker",
-        projectTech: ["ReactJS", "Firebase OAuth and Database", "HTML5", "CSS3", "API"],
+        projectTech: ["ReactJS", "Firebase", "HTML5", "CSS3", "API"],
         projectDescription: "A Cocktail App that allows the user to search for specific cocktails, find cocktails based on the ingredients and even choose a random cocktail. Designed and styled to harken back to 80s Synthwave. Written in React with a Firebase database backend and OAuth for users to save their favourite cocktails.",
         projectLiveLink: "http://cocktails.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/CocktailApp",
         projectDesktopImage: cocktail,
+        projectMobileImage: jldesignmobile,
         projectID: "cocktail" 
     },
     {
@@ -35,6 +38,7 @@ export const ProjectsData = [
         projectLiveLink: "http://countdown.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/countdown",
         projectDesktopImage: breaktimer,
+        projectMobileImage: jldesignmobile,
         projectID: "breaktimer"
 
     },
@@ -46,6 +50,7 @@ export const ProjectsData = [
         projectLiveLink: "http://countdown.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/countdown",
         projectDesktopImage: recipe,
+        projectMobileImage: jldesignmobile,
         projectID: "recipe"
 
     }

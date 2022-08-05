@@ -46,9 +46,11 @@
             .logoimage {
                 width: 50px;
                 margin: 5px;
+                transition: 0.25s;
 
                 &:hover {
-                    filter: invert(90%) sepia(20%) saturate(2983%) hue-rotate(312deg) brightness(96%) contrast(100%);
+                    fill: $primary;
+                    transition: 0.25s;
                 }
             }
         }
@@ -61,11 +63,15 @@
             text-align: center;
 
             .arrow {
-                height: 50px;
+                height: 60px;
+                width: 60px;
                 animation: pulsate-bck 2s infinite;
+                fill: $primary;
+                transition: 0.25s;
 
                 &:hover {
-                    filter: invert(90%) sepia(20%) saturate(2983%) hue-rotate(312deg) brightness(96%) contrast(100%);
+                    fill: $secondary;
+                    transition: 0.25s;
                 }
             }
         }

@@ -5,29 +5,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .skillsList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+
+        .skillsItem {
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+
+            &:hover>.skillsText {
+                opacity: 1;
+                transition: 0.25s;
+            }
+
+            .logoImage {
+                width: 50px;
+            }
+            .skillsText {
+                text-align: center;
+                opacity: 0;
+                transition: 0.25s;
+
+                @media (hover: none) {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
-.logoimage {
-    width: 50px;
-}
 
 
-.skillsList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 
-}
 
-.skillsItem {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 75px;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-.skillsText {
-    text-align: center;
-}
+

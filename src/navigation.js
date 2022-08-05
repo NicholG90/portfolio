@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import styles from './navigation.module.css'
+import styles from './navigation.module.scss'
 
 
 function Navigation(props){

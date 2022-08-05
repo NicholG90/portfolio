@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProjectsData } from './projectsData';
+import { projectsData } from './projectsData';
 import Projects from './projects';
 import styles from './carousel.module.scss'
 import leftarrow from "./assets/angle-left-solid.svg";
@@ -11,7 +11,7 @@ import rightarrow from "./assets/angle-right-solid.svg";
 
 function Carousel () {
     const [current, setCurrent] = useState(0);
-    const length = ProjectsData.length;
+    const length = projectsData.length;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -21,14 +21,14 @@ function Carousel () {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
 
-    if (!Array.isArray(ProjectsData) || ProjectsData.length <= 0) {
+    if (!Array.isArray(projectsData) || projectsData.length <= 0) {
         return null;
     }
 
     return (
         <section className={styles.projects}>
-            <div onClick={prevSlide} className={styles.arrowContainer}><img src={leftarrow} alt="Left Arrow" className={styles.arrow} /><span className='sr-only'>Left</span></div>
-            {ProjectsData.map((slide, index) => {
+            <div onClick={prevSlide} className={styles.arrowContainerLeft}><img src={leftarrow} alt="Left Arrow" className={styles.arrow} /><span className='sr-only'>Left</span></div>
+            {projectsData.map((slide, index) => {
                 return (
                     <div className={index === current ? `${styles.activeSlide}` : `${styles.slide}`} key={index}>
                         {index === current && (
@@ -37,7 +37,7 @@ function Carousel () {
                     </div>
                 );
             })}
-            <div onClick={nextSlide} className={styles.arrowContainer}><img src={rightarrow} alt="Right Arrow" className={styles.arrow} /><span className='sr-only'>Right</span></div>
+            <div onClick={nextSlide} className={styles.arrowContainerRight}><img src={rightarrow} alt="Right Arrow" className={styles.arrow} /><span className='sr-only'>Right</span></div>
         </section>
     );
 };

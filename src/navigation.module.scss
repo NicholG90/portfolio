@@ -1,0 +1,17 @@
+@import "./_variables.scss";
+
+.navList {
+    margin-top: 0;
+    padding-top: 25px;
+
+    .listItem {
+        font-size: 3rem;
+        transition: 0.25s;
+
+        &:hover {
+            color: $secondary;
+            transition: 0.25s;
+
+        }
+    }
+}
