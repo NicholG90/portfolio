@@ -12,12 +12,12 @@ function Main() {
 
 
     return (
-        <>
+        <div>
             <About />
             <AboutMe />
             <Skills />
             <div className="wrapper">
-                <Heading title="projects"/>
+                <Heading title="projects" id="projects"/>
             </div>
             <div className={styles.projectsFull}>
                 <div className="wrapper">
@@ -26,7 +26,7 @@ function Main() {
             </div>
             <ContactForm />
             <footer className={styles.footer}>Nick Gourlay ©2022</footer>
-        </>
+        </div>
     )
 }
 

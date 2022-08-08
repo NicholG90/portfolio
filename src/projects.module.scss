@@ -8,7 +8,7 @@
     height: auto;
     overflow: hidden;
 
-    &:hover {
+    &:hover, &:focus {
 
         img {
             transform: scale(1.2);
@@ -58,6 +58,7 @@
         text-align: center;
         padding: 50px;
         color: $offWhite;
+        border: 10px $secondary solid;
 
         @media (max-width: 1000px) {
             padding: 5px;
@@ -118,7 +119,7 @@
                     }
             
             
-                &:hover {
+                &:hover, &:focus {
                     background-position: 0 100%;
                     transition: 0.5s;
                 }

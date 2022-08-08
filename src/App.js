@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div id="outer-container">
       <header id="burgerHeader">
-      <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+      <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
         <Navigation />
       </Menu>
       </header>

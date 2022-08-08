@@ -19,9 +19,12 @@
             width: 50px;
             fill: $offWhite;
             cursor: pointer;
+            transition: 0.25s;
 
-            &:hover {
-                filter: invert(51%) sepia(96%) saturate(981%) hue-rotate(140deg) brightness(92%) contrast(105%);
+
+            &:hover, &:focus {
+                fill: $secondary;
+                transition: 0.25s;
             }
         }
     }

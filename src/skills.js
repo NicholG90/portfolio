@@ -9,7 +9,7 @@ function Skills() {
   return (
     <div className={styles.skills}>
         <div className='wrapper'>
-            <Heading title="skills and tech" />
+            <Heading title="skills and tech" id="skills"/>
             <ul className={styles.skillsList}>
               {skillsData.map((data, index) => {
                 return ([

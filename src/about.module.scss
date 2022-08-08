@@ -17,24 +17,24 @@
 
         .name {
             font-family: $headingFont;
-            font-size: 4rem;
+            font-size: clamp(3rem, 5vw, 4rem);
             color: $primary;
         }
 
         .oneLiner {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 3vw, 3rem);
             color: $secondary;
             padding: 15px 0 15px 0;
         }
 
         .introDetails {
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 2rem);
 
             .link {
                 color: $primary;
                 transition: 0.25s;
                 
-                &:hover {
+                &:hover, &:focus {
                     color: $secondary;
                     transition: 0.25s;
                 }
@@ -42,16 +42,21 @@
         }
 
         .logos {
-
-            .logoimage {
-                width: 50px;
-                margin: 5px;
+            
+            .logoLink {
                 transition: 0.25s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     fill: $primary;
                     transition: 0.25s;
                 }
+
+            }
+            .logoimage {
+                width: 50px;
+                margin: 5px;
+
             }
         }
     }
@@ -69,7 +74,7 @@
                 fill: $primary;
                 transition: 0.25s;
 
-                &:hover {
+                &:hover, &:focus {
                     fill: $secondary;
                     transition: 0.25s;
                 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import styles from './navigation.module.scss'
 
 
@@ -9,49 +8,19 @@ function Navigation(props){
         <>
            <ul className={styles.navList}>
             <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="hello"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >Hello</Link>
+                <a href={"#hello"}>Hello</a>
             </li>
             <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="about me"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >About</Link>
+                <a href={"#aboutme"}>About Me</a>
             </li>
             <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="skills and tech"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >Skills</Link>
+                <a href={"#skills"}>Skills</a>
             </li>
             <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >Projects</Link>
+                <a href={"#projects"}>Projects</a>
             </li>
             <li className={styles.listItem}>
-                <Link
-                    activeClass="active"
-                    to="get in touch"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >Get In Touch</Link>
+                <a href={"#contact"}>Get in Touch</a>
             </li>
             </ul>
     </>

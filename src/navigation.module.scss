@@ -8,7 +8,7 @@
         font-size: 3rem;
         transition: 0.25s;
 
-        &:hover {
+        &:hover, &:focus {
             color: $secondary;
             transition: 0.25s;
 

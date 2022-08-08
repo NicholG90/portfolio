@@ -3,7 +3,7 @@
     display: inline;
     font-family: $headingFont;
     text-transform: lowercase;
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 3.5vw, 3rem);
     margin: 0;
     width: fit-content;
     text-align: left;

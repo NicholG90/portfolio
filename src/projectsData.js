@@ -1,8 +1,13 @@
-import jldesign from "./assets/jldesign.png";
-import cocktail from "./assets/cocktail.png";
-import breaktimer from "./assets/breaktimer.png";
-import recipe from "./assets/recipe.png";
-import jldesignmobile from "./assets/jldesignmobile.png";
+import jldesign from "./assets/screenshots/jldesign.png";
+import cocktail from "./assets/screenshots/cocktail.png";
+import breaktimer from "./assets/screenshots/breaktimer.png";
+import recipe from "./assets/screenshots/recipe.png";
+import jldesignmobile from "./assets/screenshots/jldesignmobile.png";
+import cocktailmobile from "./assets/screenshots/cocktailmobile.png";
+import recipemobile from "./assets/screenshots/recipemobile.png";
+import breaktimermobile from "./assets/screenshots/breaktimermobile.png";
+
+
 
 
 
@@ -27,7 +32,7 @@ export const projectsData = [
         projectLiveLink: "http://cocktails.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/CocktailApp",
         projectDesktopImage: cocktail,
-        projectMobileImage: jldesignmobile,
+        projectMobileImage: cocktailmobile,
         projectID: "cocktail" 
     },
     {
@@ -38,19 +43,19 @@ export const projectsData = [
         projectLiveLink: "http://countdown.gourlay.me",
         projectGithubLink: "https://github.com/NicholG90/countdown",
         projectDesktopImage: breaktimer,
-        projectMobileImage: jldesignmobile,
+        projectMobileImage: breaktimermobile,
         projectID: "breaktimer"
 
     },
     {
         id: 4,
         projectName: "Recipe App",
-        projectTech: ["HTML5", "CSS3", "jQuery"],
-        projectDescription: "A break timer built with JQUERY. It allows the user to select a specific time length for their break or choose from some popular choices. The timer then displays the amount of remaining with real-time styling changes.",
-        projectLiveLink: "http://countdown.gourlay.me",
-        projectGithubLink: "https://github.com/NicholG90/countdown",
+        projectTech: ["HTML5", "CSS3", "API", "Vanilla JS"],
+        projectDescription: "A recipe generator built in Vanilla JS. It allows the user to select a preferred cuisine, diet or to search and returns a relevent recipe. The results includes an animated recipe card with ingredients on the back and instructions.",
+        projectLiveLink: "recipe-generator-nick-paridhi.netlify.app/",
+        projectGithubLink: "https://github.com/recipeGeneratorNickParidhi/recipeGenerator",
         projectDesktopImage: recipe,
-        projectMobileImage: jldesignmobile,
+        projectMobileImage: recipemobile,
         projectID: "recipe"
 
     }
