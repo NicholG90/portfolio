@@ -1,5 +1,6 @@
-import React from 'react';
+import { React, useState} from 'react';
 import styles from './projects.module.scss'
+import Fade from 'react-reveal/Fade';
 
 
 function Projects(
@@ -11,11 +12,24 @@ function Projects(
         projectDesktopImage,
         projectMobileImage,
         projectID }) {
+
+    const [visible, setVisible] = useState(false);
+
+    const handleClick = () => {
+        console.log('Test')
+        setVisible(!visible)
+        console.log(visible)
+
+    }
+
+
     return (
+        <div className={styles.projectSection}>
         <div className={styles.project}>
             <img src={projectDesktopImage} alt={`A desktop screenshot of my project titled ${projectName}`} className={styles.desktopImage} />
             <img src={projectMobileImage} alt={`A mobile screenshot of my project titled ${projectName}`} className={styles.mobileImage} />
-            <div className={styles.content} tabIndex="0">
+            <Fade when={visible}>
+            <div className={styles.content}>
                 <h2>{projectName}</h2>
                 <ul className={styles.techList}>
                     {projectTech.map((data, index) => {
@@ -28,7 +42,11 @@ function Projects(
                     <button className={styles.linkButton}><a href={projectGithubLink} target="_blank" rel="noopener noreferrer">Github Link</a></button>
                 </div>
             </div>
+            </Fade>
         </div>
+            <button onClick={handleClick} className={styles.testButton}>{visible ? 'Hide' : 'Show'} Project Details</button>
+        </div>
+
     );
 }
 

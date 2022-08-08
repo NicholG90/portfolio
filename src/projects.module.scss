@@ -1,6 +1,11 @@
 @import "./mixins.scss";
 @import "./_variables.scss";
 
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 .project {
     position: relative;
     width: 100%;
@@ -8,18 +13,14 @@
     height: auto;
     overflow: hidden;
 
-    &:hover, &:focus {
+    // &:hover, &:focus {
 
-        img {
-            transform: scale(1.2);
-            transition: 0.25s;
-        }
+    //     img {
+    //         transform: scale(1.2);
+    //         transition: 0.25s;
+    //     }
+    // }
 
-        .content {
-            opacity: 1;
-            transition: 0.5s;
-        }
-    }
 
     .desktopImage {
         max-height: 100%;
@@ -126,4 +127,26 @@
             }
         }
     }
+}
+
+.testButton {
+    margin: 10px 0;
+    padding: 10px 30px;
+    width: fit-content;
+    text-transform: uppercase;
+    color: $offWhite;
+    background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
+    transition: background-position 0.5s;
+    background-size: 100% 200%;
+    border: 1px $offWhite solid;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+
+
+    &:hover,
+    &:focus {
+        background-position: 0 100%;
+        transition: 0.5s;
+    }
+}
+
 }
