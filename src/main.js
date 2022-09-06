@@ -5,7 +5,7 @@ import ContactForm from "./contact";
 import styles from './main.module.scss';
 import AboutMe from './aboutme';
 import Heading from "./heading"
-import Carousel  from "./carousel";
+import Carousel from "./carousel";
 import Fade from 'react-reveal/Fade';
 
 
@@ -22,9 +22,9 @@ function Main() {
             <Fade bottom>
                 <Skills />
             </Fade>
-                <Fade bottom>
+            <Fade bottom>
                 <div className="wrapper">
-                    <Heading title="projects" id="projects"/>
+                    <Heading title="projects" id="projects" />
                 </div>
                 <div className={styles.projectsFull}>
                     <div className="wrapper">

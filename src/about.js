@@ -8,7 +8,7 @@ function About() {
       <div className="wrapper">
           <div className={styles.aboutText}>
             <h1 className={styles.name}> Nick Gourlay</h1>
-            <h2 className={styles.oneLiner}>junior front-end web developer</h2>
+            <h2 className={styles.oneLiner}>front-end web developer</h2>
             <p className={styles.introDetails}>
               If you'd like to work together please get 
             <a href={"#contact"} className={styles.link}> in touch</a>

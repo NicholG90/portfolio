@@ -11,7 +11,7 @@ function Navigation(props){
                 <a href={"#hello"}>Hello</a>
             </li>
             <li className={styles.listItem}>
-                <a href={"#aboutme"}>About Me</a>
+                <a href={"#aboutme"}>About</a>
             </li>
             <li className={styles.listItem}>
                 <a href={"#skills"}>Skills</a>
@@ -20,7 +20,7 @@ function Navigation(props){
                 <a href={"#projects"}>Projects</a>
             </li>
             <li className={styles.listItem}>
-                <a href={"#contact"}>Get in Touch</a>
+                <a href={"#contact"}>Contact</a>
             </li>
             </ul>
     </>

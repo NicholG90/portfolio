@@ -7,12 +7,12 @@ import Heading from "./heading"
 function AboutMe() {
 
     return(
-        <div className={styles.aboutMe}>
+        <div className={styles.aboutMe} id="aboutme">
             <div className='wrapper'>
                 <div className={styles.imageContainer}>
                     <img src={profileimage} alt="Nick Gourlay Headshot" className={styles.profileImage} />
                 </div>
-                <Heading title="about me" id="aboutme" />
+                <Heading title="about me" id="aboutmesection" />
                 <div className={styles.aboutMePara}>
                     <p>
                     I'm a front-end web developer with a strong managerial and operations background. My 7 years of operations experience has given me a effective foundation for both problem solving and building complex solutions while reinforcing my communication and analytical skills. Prior to that I graduated from the University of Toronto with a BA.

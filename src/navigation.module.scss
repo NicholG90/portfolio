@@ -5,8 +5,9 @@
     padding-top: 25px;
 
     .listItem {
-        font-size: 3rem;
+        font-size: clamp(1rem, 5vh, 3rem);
         transition: 0.25s;
+        padding: 25px 0;
 
         &:hover, &:focus {
             color: $secondary;
