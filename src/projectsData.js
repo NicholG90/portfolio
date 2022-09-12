@@ -54,7 +54,7 @@ export const projectsData = [
         projectTech: ["ReactJS", "Firebase", "HTML5", "CSS3", "API"],
         projectDescription: "A ReactJS application that allows a user to find bike share stations around the globe. Geolocation can be given by the user to route to their selected station. Uses Firebase to allow users to save their favourite stations.",
         projectLiveLink: "https://bikesharefinder-prod.nickgourlay.com/",
-        projectGithubLink: "https://github.com/NicholG90/countdown",
+        projectGithubLink: "https://github.com/NicholG90/bikeShareFinder",
         projectDesktopImage: bikesharefinder,
         projectMobileImage: bikesharefindermobile,
         projectID: "bikesharefinder"
