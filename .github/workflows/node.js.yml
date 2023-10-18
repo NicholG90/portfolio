@@ -54,6 +54,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the app
+        run: npm run build  # Adjust this command to match your project's build script
         
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
@@ -62,8 +73,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "./portfolio/client/build"
-          target: your_server_target_folder_path
+          source: "build"
+          target: portfolio
           
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.0.0
