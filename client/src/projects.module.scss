@@ -6,147 +6,153 @@
     flex-direction: column;
     align-items: center;
 
-.project {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    overflow: hidden;
+    .project {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        overflow: hidden;
 
-    // &:hover, &:focus {
+        // &:hover, &:focus {
 
-    //     img {
-    //         transform: scale(1.2);
-    //         transition: 0.25s;
-    //     }
-    // }
+        //     img {
+        //         transform: scale(1.2);
+        //         transition: 0.25s;
+        //     }
+        // }
 
 
-    .desktopImage {
-        max-height: 100%;
-        max-width: 100%;
-        transition: 0.25s;
+        .desktopImage {
+            max-height: 100%;
+            max-width: 100%;
+            transition: 0.25s;
 
-        @media (max-width: 800px) {
-            display: none;
+            @media (max-width: 800px) {
+                display: none;
+            }
         }
-    }
 
-    .mobileImage {
-        display: none;
-        max-height: 100%;
-        max-width: 100%;
-        transition: 0.25s;
+        .mobileImage {
+            display: none;
+            max-height: 100%;
+            max-width: 100%;
+            transition: 0.25s;
 
-        @media (max-width: 800px) {
+            @media (max-width: 800px) {
                 display: block;
             }
-    }
-
-    .content {
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(238, 51, 100, .9);
-        transition: 0.5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        padding: 50px;
-        color: $offWhite;
-        border: 10px $secondary solid;
-
-        @media (max-width: 1000px) {
-            padding: 5px;
-        
-        }
-        @media (max-width: 800px) {
-            border-radius: 5px;            
         }
 
-
-        .techList {
+        .content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(238, 51, 100, .9);
+            transition: 0.5s;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 10px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            color: $offWhite;
+            border: 10px $secondary solid;
 
-            @media (max-width: 500px) {
+            @media (max-width: 1000px) {
+                padding: 5px;
+
+            }
+
+            @media (max-width: 800px) {
+                border-radius: 5px;
+            }
+
+
+            .techList {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+
+                @media (max-width: 500px) {
                     font-size: 16px;
                     flex-wrap: wrap;
                 }
 
-            .techItem {
-                margin-left: 10px;
-                margin-right: 10px;
-                text-decoration: underline;
+                .techItem {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-decoration: underline;
 
+                }
             }
-        }
 
-        .projectParagraph {
-            font-size: 16px;
-        }
+            .projectParagraph {
+                font-size: 16px;
+            }
 
-        .projectButtons {
-            
-            display: flex;
-            justify-content: space-between;
-            gap: 25px;
+            .projectButtons {
 
-            @media (max-width: 500px) {
+                display: flex;
+                justify-content: space-between;
+                gap: 25px;
+
+                @media (max-width: 500px) {
                     flex-direction: column;
                     align-items: center;
                     gap: 10px;
                 }
 
-            .linkButton{
-                padding: 10px 30px;
-                width: fit-content;
-                text-transform: uppercase;
-                color: $offWhite;
-                background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
-                transition: background-position 0.5s;
-                background-size: 100% 200%;
-                border: 1px $offWhite solid;
+                .linkButton {
+                    padding: 10px 30px;
+                    width: fit-content;
+                    text-transform: uppercase;
+                    color: $offWhite;
+                    background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
+                    transition: background-position 0.5s;
+                    background-size: 100% 200%;
+                    border: 1px $offWhite solid;
 
-                @media (max-width: 500px) {
+                    @media (max-width: 500px) {
                         padding: 5px 20px;
                     }
-            
-            
-                &:hover, &:focus {
-                    background-position: 0 100%;
-                    transition: 0.5s;
+
+
+                    &:hover,
+                    &:focus {
+                        background-position: 0 100%;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
     }
-}
 
-.testButton {
-    margin: 10px 0;
-    padding: 10px 30px;
-    width: fit-content;
-    text-transform: uppercase;
-    color: $offWhite;
-    background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
-    transition: background-position 0.5s;
-    background-size: 100% 200%;
-    border: 1px $offWhite solid;
-    font-size: clamp(0.8rem, 2vw, 1rem);
-
-
-    &:hover,
-    &:focus {
-        background-position: 0 100%;
-        transition: 0.5s;
+    .project .contentVisible {
+        opacity: 1 !important;
     }
-}
+
+    .testButton {
+        margin: 10px 0;
+        padding: 10px 30px;
+        width: fit-content;
+        text-transform: uppercase;
+        color: $offWhite;
+        background-image: linear-gradient(to bottom, $primary 50%, $secondary 50%);
+        transition: background-position 0.5s;
+        background-size: 100% 200%;
+        border: 1px $offWhite solid;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+
+
+        &:hover,
+        &:focus {
+            background-position: 0 100%;
+            transition: 0.5s;
+        }
+    }
 
 }

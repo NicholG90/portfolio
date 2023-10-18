@@ -25,6 +25,4 @@ yarn-error.log*
 node_modules
 build
 
-package-lock.json
-package.json
 .env

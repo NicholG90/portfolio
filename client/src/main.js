@@ -4,14 +4,13 @@ import Skills from "./skills";
 import ContactForm from "./contact";
 import styles from './main.module.scss';
 import AboutMe from './aboutme';
-import Heading from "./heading"
+import Heading from "./heading";
 import Carousel from "./carousel";
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 
 
 function Main() {
-
 
     return (
         <div>
@@ -38,7 +37,7 @@ function Main() {
             </Fade>
 
         </div>
-    )
+    );
 }
 
-export default Main
+export default Main;
