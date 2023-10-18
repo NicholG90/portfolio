@@ -17,7 +17,7 @@ jobs:
         working-directory: ./portfolio/client
         run: |
           # Change the working directory to your app's folder
-          cd ./portfolio/client
+          cd client
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -36,6 +36,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Change working directory
+        working-directory: ./portfolio/client
+        run: |
+          # Change the working directory to your app's folder
+          cd client
+
 
       - name: Install Node.js and npm
         uses: actions/setup-node@v3
@@ -61,7 +68,7 @@ jobs:
         working-directory: ./portfolio/client
         run: |
           # Change the working directory to your app's folder
-          cd ./portfolio/client
+          cd client
         
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
