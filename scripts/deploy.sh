@@ -8,6 +8,7 @@ cd ..
 git pull
 
 # Move into the client directory and build the React app
+ls
 cd client
 npm install
 npm run build
