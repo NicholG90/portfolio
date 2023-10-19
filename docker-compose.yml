@@ -1,0 +1,26 @@
+version: '3.8'
+
+networks:
+  traefik_network:
+    external: true
+
+services:
+  portfolio_frontend:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./client/build:/usr/share/nginx/html
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio_frontend.entrypoints=http"
+      - "traefik.http.routers.portfolio_frontend.rule=Host(`portfolio.gourlay.me`)"
+      - "traefik.http.middlewares.portfolio_frontend-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.portfolio_frontend.middlewares=portfolio_frontend-https-redirect"
+      - "traefik.http.routers.portfolio_frontend-secure.entrypoints=https"
+      - "traefik.http.routers.portfolio_frontend-secure.rule=Host(`portfolio.gourlay.me`)"
+      - "traefik.http.routers.portfolio_frontend-secure.tls=true"
+      - "traefik.http.routers.portfolio_frontend-secure.service=portfolio_frontend"
+      - "traefik.http.services.portfolio_frontend.loadbalancer.server.port=80"
+    networks:
+      - traefik_network
