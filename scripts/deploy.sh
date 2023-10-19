@@ -6,6 +6,7 @@ echo "Deploying application ..."
 export NVM_DIR=$HOME/.nvm;
 source $NVM_DIR/nvm.sh;
 
+npm -v
 # Pull the latest changes from GitHub
 cd ..
 git pull
