@@ -66,16 +66,6 @@ jobs:
       - name: Build the app
         run: npm run build  # Adjust this command to match your project's build script
         
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          source: "build"
-          target: portfolio
-          
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.0.0
         with:
@@ -83,5 +73,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: whoami
+          script: 'cd portfolio && ./scripts/deploy.sh'
 
