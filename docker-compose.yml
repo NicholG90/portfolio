@@ -6,6 +6,7 @@ networks:
 
 services:
   portfolio_frontend:
+    container_name: portfolio_frontend
     image: nginx:latest
     ports:
       - "8080:80"

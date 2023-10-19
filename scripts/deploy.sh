@@ -12,9 +12,9 @@ npm install
 npm run build
 
 # Move into the server directory and build the Node.js app
-cd ../server
-npm install
-npm run build
+# cd ../server
+# npm install
+# npm run build
 
 # Move back to the root directory and start the Docker containers
 cd ..
