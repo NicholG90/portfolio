@@ -4,6 +4,7 @@ set -e
 echo "Deploying application ..."
 
 # Pull the latest changes from GitHub
+cd ..
 git pull
 
 # Move into the client directory and build the React app
