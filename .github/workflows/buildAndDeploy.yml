@@ -17,12 +17,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Install Node.js and npm
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
       - name: Install dependencies
         run: npm install
 
@@ -35,7 +33,8 @@ jobs:
     needs: [build]
 
     steps:
-
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Connect to Tailscale
         uses: tailscale/github-action@v2
         with:
@@ -44,5 +43,10 @@ jobs:
           tags: tag:ci
       - name: Deploy to Server
         run: |
-          ssh -o "StrictHostKeyChecking no" root@${{ secrets.VPS_NAME }} "cd portfolio/scripts && bash deploy.sh"
+          ssh -o "StrictHostKeyChecking no" root@${{ secrets.VPS_NAME }} "
+          ls
+          cd portfolio/scripts
+          ls
+          bash deploy.sh
+          "
 
