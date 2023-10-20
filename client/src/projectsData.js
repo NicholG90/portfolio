@@ -1,13 +1,11 @@
 import jldesign from "./assets/screenshots/jldesign.png";
 import cocktail from "./assets/screenshots/cocktail.png";
-import breaktimer from "./assets/screenshots/breaktimer.png";
 import recipe from "./assets/screenshots/recipe.png";
 import bikesharefinder from "./assets/screenshots/bikesharefinder.png";
 import votingbooth from "./assets/screenshots/votingbooth.png";
 import jldesignmobile from "./assets/screenshots/jldesignmobile.png";
 import cocktailmobile from "./assets/screenshots/cocktailmobile.png";
 import recipemobile from "./assets/screenshots/recipemobile.png";
-import breaktimermobile from "./assets/screenshots/breaktimermobile.png";
 import bikesharefindermobile from "./assets/screenshots/bikesharefindermobile.png";
 import votingboothmobile from "./assets/screenshots/votingboothmobile.png";
 
@@ -72,16 +70,4 @@ export const projectsData = [
         projectID: "votingbooth"
 
     },
-    {
-        id: 6,
-        projectName: "Break Time",
-        projectTech: ["HTML5", "CSS3", "jQuery"],
-        projectDescription: "A break timer built with JQUERY. It allows the user to select a specific time length for their break or choose from some popular choices. The timer then displays the amount of remaining with real-time styling changes.",
-        projectLiveLink: "http://countdown.gourlay.me",
-        projectGithubLink: "https://github.com/NicholG90/countdown",
-        projectDesktopImage: breaktimer,
-        projectMobileImage: breaktimermobile,
-        projectID: "breaktimer"
-
-    },
-]
+];
