@@ -44,5 +44,10 @@ jobs:
           tags: tag:ci
       - name: Deploy to Server
         run: |
-          ssh -o "StrictHostKeyChecking no" root@${{ secrets.VPS_NAME }} "cd portfolio/scripts && bash deploy.sh"
+          ssh -o "StrictHostKeyChecking no" root@${{ secrets.VPS_NAME }} "
+          ls
+          cd portfolio/scripts
+          ls
+          bash deploy.sh
+          "
 
